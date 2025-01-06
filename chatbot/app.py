@@ -9,7 +9,7 @@ import streamlit as st
 translator = Translator()
 
 
-file_path = 'PROPERTY_ITEM.csv'
+file_path = './PROPERTY_ITEM.csv'
 data = pd.read_csv(file_path)
 
 filtered_data = data[[
