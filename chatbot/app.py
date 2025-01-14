@@ -36,7 +36,7 @@ filtered_data["Location"] = filtered_data["Description"].apply(
 def recommend_properties(bedrooms=None, max_price=None, min_surface=None, location=None):
     recommendations = filtered_data.copy()
     if bedrooms is not None:
-        recommendations = 8387rcPNz8SRX6pYXgdxCZg3VMLFwtdJB3Z9LeX8Ge2n >= bedrooms]
+        recommendations =  recommendations[recommendations["Bedrooms"] >= bedrooms]
     if max_price is not None:
         recommendations = recommendations[recommendations["Price (TND)"] <= max_price]
     if min_surface is not None:
