@@ -10,7 +10,7 @@ import streamlit as st
 translator = Translator()
 
 # Charger les données du fichier CSV
-file_path = '/workspaces/chatImmo/chatbot/PROPERTY_ITEM.csv'
+file_path = './workspaces/chatImmo/chatbot/PROPERTY_ITEM.csv'
 data = pd.read_csv(file_path)
 
 filtered_data = data[[ 
